@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #000;
+}
+
+:root {
+    --color-texto: #3498db;
+}
+
+
+/*----------------------------------------------------*/
+
+
+/* Estilo inicial del header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* Color de fondo por defecto */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    transition: top 0.3s, background-color 0.3s; /* Transición suave al ocultar/mostrar y al cambiar color */
+    z-index: 1000;
+}
+
+/* Cuando el header está oculto y el usuario está desplazándose hacia abajo */
+.header.hidden {
+    top: -60px; /* Ajusta según la altura del header */
+}
+
+/* Cuando el header está visible y el usuario está desplazándose hacia arriba */
+.header.scrolled-up {
+    background-color: #111; /* Color de fondo cuando el usuario está desplazándose hacia arriba */
+}
+
+.header_a{
+    font-size: larger;
+    margin: auto 20px;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px #0088cc;
+}
+
+/*----------------------------------------------------*/
+
+.main_home{
+    display: flex;
+    margin: 100px auto 0px auto;
+    position: relative;
+}
+
+.main-div {
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.div-left{
+    margin-left: 300px;
+}
+.div-right{
+    margin-right: 300px;
+}
+.main-div img{
+    width: 70%; 
+    max-height: 400px;
+    border-radius: 50px 50px 0 0; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    mask-image: linear-gradient(#000 80%, transparent);
+    border: 2px solid var(--color-texto);
+    border-bottom: 1px solid var(--color-texto);
+    padding-top: 5px;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+.main-div label{
+    color: var(--color-texto);
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 10px auto; 
+    font-size: 25px;
+}
+
+.icons input{
+    background-color: #000;
+    padding: 8px 6px;
+    border-radius: 5px;
+    border: 1px solid var(--color-texto);
+    height: 90%;
+    cursor: pointer;
+}
+
+.fas{
+    margin-top: 1%;
+}
+
+/*----------------------------------------------------*/
+.main_about {
+    margin: 50px auto 20px auto;
+    text-align: center;
+}
+
+.content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-divs, .bottom-divs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 160px;
+}
+
+.top-divs {
+    margin-bottom: 20px; /* Espacio entre los divs superiores y el h1 */
+}
+
+.bottom-divs {
+    margin-top: 20px; /* Espacio entre el h1 y los divs inferiores */
+}
+
+.div-about {
+    background-color: #101010;
+    display: flex;
+    flex-direction: column; /* Coloca el h3 en la parte superior */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin: 0 10px; /* Espacio entre los divs */
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 8px; /* Bordes redondeados para los divs */
+    width: 40%; /* Ancho del 40% del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    border-left: 4px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.div-about:hover{
+    border-left: 4px solid var(--color-texto);
+}
+
+.div-about h3 {
+    color: var(--color-texto);
+    margin: 0 0 20px 0; /* Margen inferior para separar el h3 del contenido */
+    text-align: center; /* Centra el texto del h3 */
+    width: 100%; /* Asegura que el h3 ocupe todo el ancho disponible del div */
+}
+
+.content-container {
+    display: flex;
+    align-items: center; /* Alinea los iconos y el texto verticalmente */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.content-container i {
+    color: var(--color-texto);
+    font-size: 50px; /* Tamaño del icono */
+    margin-right: 20px; /* Espacio entre el icono y el texto */
+    height: 80%; /* El icono ocupa el 80% de la altura del div */
+}
+
+.content-container p {
+    margin: 0; /* Elimina márgenes adicionales de p */
+    text-align: left; /* Alinea el texto del párrafo a la izquierda */
+}
+
+/*----------------------------------------------------*/
+
+.main_knowledge{
+    margin: 0px auto 100px auto;
+}
+
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.icon:hover{
+    border: 1px solid #222;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.icon img{
+    width: 50px;
+    margin-bottom: 8px;
+}
+
+.icon i{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.icon label{
+    font-size: 12px;
+}
+
+.icon:nth-child(1) i { /* HTML */
+    color: #E44D26;
+}
+
+.icon:nth-child(2) i { /* CSS */
+    color: #1572B6;
+}
+
+.icon:nth-child(3) i { /* JavaScript */
+    color: #F7DF1E;
+}
+
+.icon:nth-child(4) i { /* Git */
+    color: #F1502F;
+}
+
+.icon:nth-child(5) i { /* Bootstrap */
+    color: #563D7C;
+}
+
+.icon:nth-child(6) i { /* Java */
+    background: linear-gradient(to bottom, #FF5D00 30%, #007396 70%); /* Gradiente de azul a naranja */
+    -webkit-background-clip: text; /* Para aplicar el gradiente al texto en WebKit browsers */
+    background-clip: text; /* Para aplicar el gradiente al texto en otros navegadores */
+    color: transparent; /* Hacer que el color del texto sea transparente para mostrar solo el gradiente */
+}
+
+.icon:nth-child(7) i { /* C# */
+    color: #68217A;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon:nth-child(8) i { /* MySQL */
+    color: #00618A;
+}
+
+.icon:nth-child(9) i { /* SQLite */
+    color: #003B57;
+}
+
+/*----------------------------------------------------*/
+
+#proyectoss{
+    height: 1px;
+}
+
+.main_projects h1{
+    text-align: center;
+    margin: 100px auto;
+}
+
+.div-project{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222;
+    padding: 15px;
+}
+
+.technology{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.projects i{
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+.div-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/*----------------------------------------------------*/
+
+.main_certificados{
+    margin: 150px auto;
+}
+
+.main_certificados h1{
+    text-align: center;
+}
+
+.div-cert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+    position: relative;
+}
+
+.div-cert img {
+    width: 200px;
+    margin: auto 20px;
+    transition: transform 400ms ease-in-out;
+    cursor: pointer; /* Añadir un cursor de puntero para indicar que la imagen es clicable */
+}
+
+.div-cert img.active {
+    transform: scale(3);
+    z-index: 10;
+    position: absolute;
+}
+
+
+
+/*----------------------------------------------------*/
+
+.main_contact h1{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.contact-form img{
+    width: 300px;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    border-bottom: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+}
+
+#label-form{
+    font-size: 20px;
+    color: var(--color-texto);
+}
+
+.form input{
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin: 20px 0px;
+}
+
+.form textarea{
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 80px;
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form input[type="email"], .form input[type="text"]{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.form input[type="submit"] {
+    color: #000;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #0089c9;
+    width: 25%;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 15px auto;  
+    border: 1px solid #000;
+}
+
+.form input[type="submit"]:hover {
+    color: #0089c9;
+    background-color: #000;
+    border: 1px solid #0089c9;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.icons-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons-form i{
+    font-size: 25px;
+    margin: 20px auto;
+}
