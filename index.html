@@ -25,14 +25,16 @@
                 <label for="" class="label">Back-End Developer</label>
                 <div class="icons">
                     <a href="https://github.com/dashboard" title="Github"><i class="fas fa-brands fa-github"></i></a>
-                    <a href="https://wa.me/3444517276?text=Hola%20me%20interesa%20tu%20servicio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/lautaro-villabona-40002a296/" title="Linkedin"><i class="fas fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/3444517276?text=Hola%20me%20interesa%20tu%20servicio" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/lautaro-villabona-40002a296/" title="Linkedin"><i
+                            class="fas fa-brands fa-linkedin"></i></a>
                     <a href="CV_Lautaro_Villabona.docx" download>
                         <input type="button" value="DESCARGAR CV">
                     </a>
                 </div>
             </div>
-            <div class="main-div div-right"> <img src="IMG/perfil.jpg" alt=""></div>
+            <div class="main-div div-right"> <img src="IMG/Retrato digital estilo caricatura.png" alt=""></div>
         </div>
         <div id="sobreMi"></div><br>
         <div class="main_about">
@@ -88,64 +90,110 @@
 
         <div class="main_knowledge">
             <div class="language">
-            <div class="icon"><i class="fa-brands fa-html5"></i><label for="">HTML</label></div>
-            <div class="icon"><i class="fa-brands fa-css3-alt"></i><label for="">CSS</label></div>
-            <div class="icon"><i class="fa-brands fa-js"></i><label for="">JAVASCRIPT</label></div>
-            <div class="icon"><i class="fa-brands fa-git-alt"></i></i><label for="">GIT</label></div>
-            <div class="icon"><i class="fa-brands fa-bootstrap"></i><label for="">BOOTSTRAP</label></div>
-            <div class="icon"><i class="fa-brands fa-java"></i><label for="">JAVA</label></div>
-            <div class="icon"><i class="devicon-csharp-plain"></i><label for="">C SHARP</label></div>
-            <div class="icon"><i class="devicon-mysql-plain"></i><label for="">MYSQL</label></div>
-            <div class="icon"><i class="devicon-sqlite-plain"></i><label for="">SQLITE</label></div>
-            <div class="icon"><img src="IMG/SQLSERVER.jpg" alt=""><label for="">SQLSERVER</label></div>
-            <div class="icon"><img src="IMG/B4A.jpg" alt=""><label for="">B4A</label></div>
-        </div>
+                <div class="icon"><i class="fa-brands fa-html5"></i><label for="">HTML</label></div>
+                <div class="icon"><i class="fa-brands fa-css3-alt"></i><label for="">CSS</label></div>
+                <div class="icon"><i class="fa-brands fa-js"></i><label for="">JAVASCRIPT</label></div>
+                <div class="icon"><i class="fa-brands fa-git-alt"></i></i><label for="">GIT</label></div>
+                <div class="icon"><i class="fa-brands fa-bootstrap"></i><label for="">BOOTSTRAP</label></div>
+                <div class="icon"><i class="fa-brands fa-java"></i><label for="">JAVA</label></div>
+                <div class="icon"><i class="devicon-csharp-plain"></i><label for="">C SHARP</label></div>
+                <div class="icon"><i class="devicon-mysql-plain"></i><label for="">MYSQL</label></div>
+                <div class="icon"><i class="devicon-sqlite-plain"></i><label for="">SQLITE</label></div>
+                <div class="icon"><img src="IMG/SQLSERVER.jpg" alt=""><label for="">SQLSERVER</label></div>
+                <div class="icon"><img src="IMG/B4A.jpg" alt=""><label for="">B4A</label></div>
+            </div>
         </div>
         <div id="proyectoss"></div>
         <div class="main_projects">
+
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+
+            <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <h2 class="h2-proyect">Sistema Web</h2>
+            <div class="carousel-track">
+                <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+            </div>
+            <button class="next">&#10095;</button>
+            </div>
+            <p>Podrás revisar el código en mi Github <a href="">aqui</a>.</p>
+        </div>
+        </div>
+
+
             <H1>PROYECTOS</H1>
-            <div class="div-project">
+            <div class="div-project"> 
                 <div class="projects">
-                    <div class="div-img"><img src="IMG/AlquilerCanchas.jpg" alt=""></div>
+                    <div class="div-img"><img src="IMG/javaweb.jpg" alt=""></div>
                     <div class="div-content">
-                        <h5>Alquiler Canchas</h5>
-                        <h6>Tecnologías</h6>
-                        <div class="technology"><i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i></div>
+                        <h4>Alquiler Canchas</h4>
+                        <h5 style="margin-top: 5px;">Tecnologías</h5>
+                        <div class="technology">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="devicon-mysql-plain"></i>
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <button class="contentButton" onclick="openModal('alquiler')">Ver más</button>
                     </div>
                 </div>
                 <div class="projects">
-                    <div class="div-img"><img src="IMG/Proyecto.jpg" alt=""></div>
-                    <div class="div-content"></div>
+                    <div class="div-img"><img src="IMG/B4A.png" alt=""></div>
+                                        <div class="div-content">
+                        <h4>Gestión Instituto de Ingles</h4>
+                        <h5 style="margin-top: 5px;">Tecnologías</h5>
+                        <div class="technology">
+                            <img class="img-proyect" src="IMG/B4A.jpg" alt="">
+                            <i class="devicon-sqlite-plain sqlite"></i>
+                            
+                        </div>
+                        <button class="contentButton" onclick="openModal('gestion')">Ver más</button>
+                    </div>
                 </div>
                 <div class="projects">
-                    <div class="div-img"><img src="IMG/Proyecto.jpg" alt=""></div>
-                    <div class="div-content"></div>
+                        <div class="div-img"><img src="IMG/c.png" alt=""></div>
+                        <div class="div-content">
+                        <h4>Gestión Cliente-Proveedor</h4>
+                        <h5 style="margin-top: 5px;">Tecnologías</h5>
+                        <div class="technology">
+                            <i class="devicon-csharp-plain"></i>
+                            <img class="img-proyect" src="IMG/SQLSERVER.jpg" alt="">
+                            
+                        </div>
+                        <button class="contentButton" onclick="openModal('proveedor')">Ver más</button>
+                    </div>
                 </div>
 
             </div>
         </div>
         <div id="certicados"></div>
-        <div class="main_certificados">
-            <h1>CERTIFICADOS</h1>
-            <div class="div-cert">
-                <img src="IMG/Certificado_Algoritmos.jpg" alt="" onclick="toggleImageSize(this)">
-                <img src="IMG/Certificado_Java.jpg" alt="" onclick="toggleImageSize(this)">
-                <img src="IMG/Certificado_MySQL.jpg" alt="" onclick="toggleImageSize(this)">
-                <img src="IMG/Certificado_Git.jpg" alt="" onclick="toggleImageSize(this)">
-                <img src="IMG/Certificado_HTMLyCSS.jpg" alt="" onclick="toggleImageSize(this)">
-                <img src="IMG/Certificado_JavaWeb.jpg" alt="" onclick="toggleImageSize(this)">
-                <img src="IMG/Certificado_SpringBoot.jpg" alt="" onclick="toggleImageSize(this)">
+            <div class="main_certificados">
+                <h1>CERTIFICADOS</h1>
+                <div class="carrusel-container">
+                    <button class="prevv">&#10094;</button>
+                    <div class="div-cert">
+                        <img src="IMG/Certificado_Algoritmos.jpg" alt="" onclick="toggleImageSize(this)">
+                        <img src="IMG/Certificado_Java.jpg" alt="" onclick="toggleImageSize(this)">
+                        <img src="IMG/Certificado_MySQL.jpg" alt="" onclick="toggleImageSize(this)">
+                        <img src="IMG/Certificado_Git.jpg" alt="" onclick="toggleImageSize(this)">
+                        <img src="IMG/Certificado_HTMLyCSS.jpg" alt="" onclick="toggleImageSize(this)">
+                        <img src="IMG/Certificado_JavaWeb.jpg" alt="" onclick="toggleImageSize(this)">
+                        <img src="IMG/Certificado_SpringBoot.jpg" alt="" onclick="toggleImageSize(this)">
+                    </div>
+                    <button class="nextt">&#10095;</button>
+                </div>
             </div>
-        </div>
-        
+
+
         <div class="main_contact" id="contacto">
             <h1>CONTACTO</h1>
             <div class="contact-form">
                 <img src="IMG/Img-form.jpg" alt="">
                 <div>
-                    <form action="https://formsubmit.co/lautarovillabona.ar@gmail.com" method="POST"  class="form">
+                    <form action="https://formsubmit.co/lautarovillabona.ar@gmail.com" method="POST" class="form">
                         <label for="name" id="label-form">¡Trabajemos juntos!</label>
                         <div>
                             <input type="text" id="name" name="name" placeholder="Nombre" required>
@@ -156,13 +204,17 @@
                         <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contacto">
                         <input type="hidden" name="_captcha" value="false">
                     </form>
-                    
-                    
+
+
                     <div class="icons-form">
-                        <a href="mailto:lautarovillabona.ar@gmail.com?subject=Asunto%20del%20correo&body=Contenido%20del%20correo" title="Email"><i class="fas fa-solid fa-envelope"></i></a>
-                        <a href="https://wa.me/3444517276?text=Hola%20me%20interesa%20tu%20servicio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://github.com/dashboard"title="Github"><i class="fas fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/lautaro-villabona-40002a296/"title="Linkedin"><i class="fas fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:lautarovillabona.ar@gmail.com?subject=Asunto%20del%20correo&body=Contenido%20del%20correo"
+                            title="Email"><i class="fas fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/3444517276?text=Hola%20me%20interesa%20tu%20servicio" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/dashboard" title="Github"><i
+                                class="fas fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lautaro-villabona-40002a296/" title="Linkedin"><i
+                                class="fas fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -170,6 +222,9 @@
     </main>
 
 
+<div class="zoom-overlay" onclick="closeZoom()">
+    <img id="zoomed-img" src="" alt="Certificado ampliado">
+</div>
 
     <script src="script.js"></script>
 </body>

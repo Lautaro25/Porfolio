@@ -73,20 +73,21 @@ body{
     margin: 0 5px;
 }
 
-.div-left{
-    margin-left: 300px;
+.div-left {
+    margin-left: 0;
 }
-.div-right{
-    margin-right: 300px;
+.div-right {
+    margin-right: 0;
 }
+
 .main-div img{
-    width: 70%; 
+    width: 50%; 
     max-height: 400px;
     border-radius: 50px 50px 0 0; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
     mask-image: linear-gradient(#000 80%, transparent);
     border: 2px solid var(--color-texto);
-    border-bottom: 1px solid var(--color-texto);
+    border-bottom: none;
     padding-top: 5px;
 }
 
@@ -202,8 +203,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
     flex-wrap: wrap;
+    height: auto;
+    min-height: 200px; /* opcional, para mantener altura mínima */
+    margin-bottom: 80px; /* crea espacio con los proyectos */
 }
 
 .icon{
@@ -279,7 +282,122 @@ body{
     color: #003B57;
 }
 
+.sqlite{
+    color: #003B57;
+}
+
 /*----------------------------------------------------*/
+    #myModal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    pointer-events: none; /* para que no reciba eventos cuando está oculto */
+}
+
+#myModal.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; /* para que reciba eventos cuando está visible */
+}
+
+
+.modal-content {
+    background-color: #111;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease-in-out;
+    }
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+.close:hover {
+    color: #000;
+    }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+
+.imgs-proyect{
+    
+} 
+
+.h2-proyect{
+    text-align: center;
+}
+
+
+/*-----------------------Carrusel de Imagenes-----------------------------*/
+    .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    }
+
+    .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    margin: 10px auto;
+    }
+
+    .carousel-track img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+    .prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+    }
+
+    .prev {
+    left: 0;
+    border-bottom-right-radius: 10px ;
+    border-top-right-radius: 10px ;
+    }
+
+    .next {
+    right: 0;
+        border-bottom-left-radius: 10px ;
+    border-top-left-radius: 10px ;
+    }
+
+/*----------------------------------------------------*/
+
 
 #proyectoss{
     height: 1px;
@@ -293,8 +411,11 @@ body{
 .div-project{
     height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
+    flex-wrap: wrap;
+
+
 }
 
 .div-content{
@@ -318,6 +439,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    margin: 10px auto;
 }
 
 .projects i{
@@ -332,36 +454,134 @@ body{
     border-radius: 10px;
 }
 
+.img-proyect{
+    width: 20px;
+}
+
+.technology .fa-html5{
+    color: #E44D26;
+}
+
+.technology .fa-css3-alt{
+    color: #1572B6;
+}
+.technology .fa-js{
+    color: #F7DF1E;
+}
+.technology .devicon-mysql-plain{
+    color: #00618A;
+}
+.technology .fa-java{
+    background: linear-gradient(to bottom, #FF5D00 30%, #007396 70%); /* Gradiente de azul a naranja */
+    -webkit-background-clip: text; /* Para aplicar el gradiente al texto en WebKit browsers */
+    background-clip: text; /* Para aplicar el gradiente al texto en otros navegadores */
+    color: transparent; /* Hacer que el color del texto sea transparente para mostrar solo el gradiente */
+}
+.technology .devicon-csharp-plain{
+    color: #68217A;
+}
 /*----------------------------------------------------*/
 
-.main_certificados{
+.main_certificados {
     margin: 150px auto;
 }
 
-.main_certificados h1{
+.main_certificados h1 {
     text-align: center;
+}
+
+.carrusel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 90%;
+    margin: auto;
 }
 
 .div-cert {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 10px;
-    position: relative;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+    max-width: 80%;
+}
+
+.div-cert::-webkit-scrollbar {
+    display: none; /* Ocultar barra de desplazamiento */
 }
 
 .div-cert img {
     width: 200px;
-    margin: auto 20px;
-    transition: transform 400ms ease-in-out;
-    cursor: pointer; /* Añadir un cursor de puntero para indicar que la imagen es clicable */
+    flex-shrink: 0;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .div-cert img.active {
-    transform: scale(3);
+    transform: scale(2.5);
     z-index: 10;
-    position: absolute;
+    position: relative;
 }
+
+button.prevv,
+button.nextt {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+button.prevv:hover,
+button.nextt:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fondo oscuro detrás del certificado ampliado */
+.zoom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.zoom-overlay.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.zoom-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.6);
+    cursor: pointer;
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+}
+
+.zoom-overlay.visible img {
+    transform: scale(1);
+}
+
 
 
 
@@ -450,3 +670,80 @@ body{
     font-size: 25px;
     margin: 20px auto;
 }
+
+.contentButton{
+    background-color: #1da211;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+    @media (max-width: 768px) {
+    .main_home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-divs,
+    .bottom-divs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-about {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .div-project {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .projects {
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .contact-form img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .form input[type="submit"] {
+        width: 60%;
+    }
+
+        .main_home {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .main-div {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .div-left,
+    .div-right {
+        margin: 0;
+    }
+
+    .main-div img {
+        width: 60%;
+        max-height: none;
+        border-radius: 40px;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    }
