@@ -42,42 +42,42 @@ const projectData = {
         title: 'Alquiler Canchas (Sistema Web)',
         github: 'https://github.com/Lautaro25/Sistema-Web',
         images: [
-            'IMG/proyectos/Sistema Web/image22.png',
-            'IMG/proyectos/Sistema Web/image6.png',
-            'IMG/proyectos/Sistema Web/image2.png',
-            'IMG/proyectos/Sistema Web/image21.png',
-            'IMG/proyectos/Sistema Web/image14.png',
-            'IMG/proyectos/Sistema Web/image7.png',
-            'IMG/proyectos/Sistema Web/image10.png',
-            'IMG/proyectos/Sistema Web/image5.png'
+            'IMG/proyectos/Sistema Web/image22.webp',
+            'IMG/proyectos/Sistema Web/image6.webp',
+            'IMG/proyectos/Sistema Web/image2.webp',
+            'IMG/proyectos/Sistema Web/image21.webp',
+            'IMG/proyectos/Sistema Web/image14.webp',
+            'IMG/proyectos/Sistema Web/image7.webp',
+            'IMG/proyectos/Sistema Web/image10.webp',
+            'IMG/proyectos/Sistema Web/image5.webp'
         ]
     },
     gestion: {
         title: 'Gestión Intituto de Ingles (App Movile)',
         github: 'https://github.com/Lautaro25/App-Gestion-Instituto',
         images: [
-            'IMG/proyectos/B4A/IMG-20250731-WA0031.jpg',
-            'IMG/proyectos/B4A/IMG-20250731-WA0030.jpg',
-            'IMG/proyectos/B4A/IMG-20250731-WA0029.jpg',
-            'IMG/proyectos/B4A/IMG-20250731-WA0028.jpg',
-            'IMG/proyectos/B4A/IMG-20250731-WA0027.jpg',
-            'IMG/proyectos/B4A/IMG-20250731-WA0026.jpg',
-            'IMG/proyectos/B4A/IMG-20250731-WA0025jpg',
-            'IMG/proyectos/B4A/IMG-20250731-WA0026.jpg'
+            'IMG/proyectos/B4A/IMG-20250731-WA0031.webp',
+            'IMG/proyectos/B4A/IMG-20250731-WA0030.webp',
+            'IMG/proyectos/B4A/IMG-20250731-WA0029.webp',
+            'IMG/proyectos/B4A/IMG-20250731-WA0028.webp',
+            'IMG/proyectos/B4A/IMG-20250731-WA0027.webp',
+            'IMG/proyectos/B4A/IMG-20250731-WA0026.webp',
+            'IMG/proyectos/B4A/IMG-20250731-WA0025webp',
+            'IMG/proyectos/B4A/IMG-20250731-WA0026.webp'
         ]
     },
     proveedor: {
         title: 'Gestión Cliente-Proveedor (App de Escritorio)',
         github: 'https://github.com/Lautaro25/Gestion-Pedidos-y-Proveedores-C-',
         images: [
-            'IMG/proyectos/C/c1.png',
-            'IMG/proyectos/C/c2.png',
-            'IMG/proyectos/C/c3.png',
-            'IMG/proyectos/C/c4.png',
-            'IMG/proyectos/C/c5.png',
-            'IMG/proyectos/C/c6.png',
-            'IMG/proyectos/C/c7.png',
-            'IMG/proyectos/C/c8.png'
+            'IMG/proyectos/C/c1.webp',
+            'IMG/proyectos/C/c2.webp',
+            'IMG/proyectos/C/c3.webp',
+            'IMG/proyectos/C/c4.webp',
+            'IMG/proyectos/C/c5.webp',
+            'IMG/proyectos/C/c6.webp',
+            'IMG/proyectos/C/c7.webp',
+            'IMG/proyectos/C/c8.webp'
         ]
     }
 };
