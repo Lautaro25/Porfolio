@@ -746,4 +746,12 @@ button.nextt:hover {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .h2-proyect{
+        font-size: small;
+    }
+
+    .modal-content{
+        font-size: small;
+    }
     }
